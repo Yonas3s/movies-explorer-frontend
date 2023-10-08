@@ -1,0 +1,11 @@
+.movieslist__container {
+    margin: auto;
+    margin-bottom: 150px;
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 360px);
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 31px;
+    max-width: 1140px;
+}

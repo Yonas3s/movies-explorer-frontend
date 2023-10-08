@@ -1,0 +1,39 @@
+.filter__container {
+    border-left: 1px solid #CBCBCB;
+    display: inline;
+    width: 226px;
+    height: 40px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-left: 19px;
+}
+
+.shortfilms__text {
+    color: black;
+    font-size: 13px;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.shortfilms__checkbox {
+    display: none;
+}
+
+.shortfilms__checkbox+label {
+    display: flex;
+    border-radius: 99px;
+    width: 36px;
+    height: 20px;
+    margin-right: 14px;
+    background-image: url("../../images/filter-checkbox-custom.svg");
+}
+
+.shortfilms__checkbox-active+label {
+    background-image: url("../../images/filter-checkbox-custom-active.svg");
+}
+
+.filter__container-noborder {
+    border-left: 0;
+}

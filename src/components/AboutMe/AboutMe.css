@@ -1,0 +1,150 @@
+.aboutme__title {
+    border-bottom: 1px solid black;
+    font-size: 22px;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    line-height: 77px;
+    margin-top: 83px;
+    margin-bottom: 70px;
+}
+
+.aboutme__container {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    /* height: 608px; */
+}
+
+.aboutme__info {
+    display: grid;
+    grid-template-columns: 600px auto 270px;
+    grid-template-rows: 58px 38px 114px 116px;
+}
+
+.aboutme__info-name {
+    grid-column: 1;
+    grid-row: 1;
+    color: black;
+    font-size: 50px;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    line-height: 58px;
+}
+
+.aboutme__info-age {
+    grid-column: 1;
+    grid-row: 2;
+    color: black;
+    font-size: 18px;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    line-height: 20px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.aboutme__info-biography {
+    grid-column: 1;
+    grid-row: 3;
+    color: black;
+    font-size: 14px;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    line-height: 22px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.aboutme__link-github {
+    grid-column: 1;
+    grid-row: 4;
+    color: black;
+    font-size: 14px;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+}
+
+.aboutme__info-photo {
+    grid-column: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+@media screen and (max-width: 768px) {
+    .aboutme__info-name {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .aboutme__info-age {
+        font-size: 12px;
+        line-height: 16px;
+        align-items: flex-start;
+    }
+
+    .aboutme__info-biography {
+        font-size: 12px;
+        height: 108px;
+        line-height: 18px;
+    }
+
+    .aboutme__info {
+        grid-template-columns: 364px auto 255px;
+        grid-template-rows: 56px 38px 108px 116px;
+    }
+
+    .aboutme__info-photo {
+        width: 255px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .aboutme__title {
+        font-size: 18px;
+        line-height: 78px;
+        margin: 0 auto 60px;
+    }
+
+    .aboutme__info {
+        grid-template-columns: 292px;
+        grid-template-rows: 392px 56px 36px 152px 87px;
+    }
+
+    .aboutme__info-name {
+        font-size: 30px;
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .aboutme__info-age {
+        font-size: 11px;
+        line-height: 16px;
+        align-items: flex-start;
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .aboutme__info-biography {
+        font-size: 11px;
+        height: 112px;
+        line-height: 16px;
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    .aboutme__info-photo {
+        width: 280px;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .aboutme__link-github {
+        grid-column: 1;
+        grid-row: 5;
+        display: flex;
+        align-items: flex-start;
+    }
+}
