@@ -1,15 +1,15 @@
 import "./MoviesCard.css";
 import moviePic from "../../images/movie-pic.png";
 
-export default function MoviesCard({ liked }) {
+export default function MoviesCard({ liked, name }) {
     return (
-        <div className="movie__container">
-            {liked === false ? <button className="movie__save">Сохранить</button> : <button className="movie__save-liked" />}
-            <img src={moviePic} className="movies__photo" alt="Превью фильма"></img>
+        <li className="movie__container">
+            {liked === false ? <button type='button' className="movie__save">Сохранить</button> : <button type='button' className="movie__save-liked" />}
+            <img src={moviePic} className="movie__photo" alt={name}></img>
             <div className="movie__description">
-                <p className="movie__title">33 слова о дизайне</p>
+                <h2 className="movie__title">33 слова о дизайне</h2>
                 <p className="movie__time">1ч 17м</p>
             </div>
-        </div>
+        </li>
     )
 }

@@ -7,20 +7,6 @@ import Main from '../../Main/Main.jsx';
 function App() {
   return (
     <div className='root__page'>
-      {/* <Header loggenIn={true} /> */}
-      {/* <Promo />
-      <NavTab />
-      <AboutProject />
-      <Techs />
-      <AboutMe />
-      <Portfolio /> */}
-      {/* <SearchForm />
-      <MoviesCardList /> */}
-      {/* <Register /> */}
-      {/* <Login /> */}
-      {/* <Profile /> */}
-      {/* <Footer /> */}
-      {/* <Error /> */}
       <Routes>
         <Route path='signup' element={
           <Main name='signup' />

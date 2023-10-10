@@ -1,5 +1,5 @@
 .aboutproject__container {
-    padding: 81px 0;
+    padding: 85px 0;
 }
 
 .aboutproject__title {
@@ -10,6 +10,8 @@
     line-height: 77px;
     margin: 0 auto 70px;
     max-width: 100%;
+    letter-spacing: -1px;
+    /* word-spacing: -3px; */
 }
 
 .aboutproject__info {
@@ -23,12 +25,14 @@
     font-size: 20px;
     font-family: Inter, sans-serif;
     font-weight: 400;
+    letter-spacing: -0.8px;
+    /* word-spacing: 0; */
 }
 
 .aboutproject__info-description {
     font-size: 14px;
     font-family: Inter, sans-serif;
-    width: 470px;
+    width: 500px;
     font-weight: 400;
     line-height: 20px;
 }
@@ -48,7 +52,7 @@
     grid-template-columns: 228px auto;
     grid-template-rows: 36px 36px;
     margin-top: 110px;
-    margin-bottom: 100px;
+    margin-bottom: 25px;
 }
 
 .aboutproject__time-block {
@@ -73,10 +77,18 @@
     color: black;
 }
 
-@media screen and (max-width: 768px) {
+.aboutproject__time-block:nth-child(3) {
+    padding-top: 13px;
+}
+
+.aboutproject__time-block:nth-child(4) {
+    padding-top: 13px;
+}
+
+@media screen and (max-width: 1024px) {
     .aboutproject__container {
+        padding: 66px 0 60px;
         max-width: 100%;
-        height: 585px;
     }
 
     .aboutproject__info-description {
@@ -86,8 +98,22 @@
     }
 
     .aboutproject__info {
+        /* width: 284px; */
         column-gap: 30px;
         row-gap: 22px;
+        margin: 0 auto;
+    }
+
+    .aboutproject__title {
+        font-size: 22px;
+        line-height: 75px;
+        margin-bottom: 71px;
+    }
+
+    .aboutproject__time {
+        grid-template-columns: 140px auto;
+        grid-template-rows: 36px 35px;
+        margin-top: 93px;
     }
 }
 
@@ -97,12 +123,13 @@
     }
 
     .aboutproject__title {
-        margin-bottom: 60px;
+        margin-bottom: 62px;
         font-size: 18px;
         line-height: 78px;
     }
 
     .aboutproject__info {
+        width: 284px;
         grid-template-columns: 284px;
         grid-template-rows: 44px 88px 44px 48px;
         row-gap: 16px;
@@ -113,6 +140,7 @@
         grid-row: 1;
         grid-column: 1;
         font-size: 18px;
+        letter-spacing: -0.7px;
     }
 
     .aboutproject__info-title:last-of-type {
@@ -137,7 +165,7 @@
     .aboutproject__time {
         display: grid;
         grid-template-columns: 100px auto;
-        grid-template-rows: 35px 35px;
+        grid-template-rows: 35px 22px;
         margin-top: 0;
     }
 

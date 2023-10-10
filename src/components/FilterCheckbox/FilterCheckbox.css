@@ -4,9 +4,10 @@
     width: 226px;
     height: 40px;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     margin-left: 19px;
+    padding: 0 29px 0 30px;
 }
 
 .shortfilms__text {
@@ -34,6 +35,24 @@
     background-image: url("../../images/filter-checkbox-custom-active.svg");
 }
 
-.filter__container-noborder {
-    border-left: 0;
+@media screen and (max-width: 1024px) {
+    .filter__container {
+        padding: 0 20px;
+    }
+
+    .shortfilms__text {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .filter__container {
+        border-left: none;
+        margin: auto;
+        height: 18px;
+    }
+
+    .shortfilms__text {
+        font-size: 11px;
+    }
 }

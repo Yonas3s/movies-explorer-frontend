@@ -1,24 +1,29 @@
+* {
+    padding: 0;
+}
+
 .aboutme__title {
     border-bottom: 1px solid black;
     font-size: 22px;
     font-family: Inter, sans-serif;
     font-weight: 400;
-    line-height: 77px;
-    margin-top: 83px;
-    margin-bottom: 70px;
+    line-height: 75px;
+    margin-top: 87px;
+    margin-bottom: 65px;
+    letter-spacing: -0.7px;
 }
 
 .aboutme__container {
     display: block;
     margin: auto;
     max-width: 100%;
-    /* height: 608px; */
 }
 
 .aboutme__info {
     display: grid;
-    grid-template-columns: 600px auto 270px;
-    grid-template-rows: 58px 38px 114px 116px;
+    grid-template-columns: 590px auto 270px;
+    grid-template-rows: 57px 38px 114px 116px;
+    margin-bottom: 101px;
 }
 
 .aboutme__info-name {
@@ -29,6 +34,7 @@
     font-family: Inter, sans-serif;
     font-weight: 400;
     line-height: 58px;
+    letter-spacing: -2px;
 }
 
 .aboutme__info-age {
@@ -73,10 +79,17 @@
     grid-row-end: 4;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
+    .aboutme__title {
+        margin-top: 65px;
+        line-height: 77px;
+        margin-bottom: 65px;
+    }
+    
     .aboutme__info-name {
         font-size: 40px;
         line-height: 40px;
+        letter-spacing: -1.4px;
     }
 
     .aboutme__info-age {
@@ -89,11 +102,13 @@
         font-size: 12px;
         height: 108px;
         line-height: 18px;
+        letter-spacing: 0.01px;
     }
 
     .aboutme__info {
         grid-template-columns: 364px auto 255px;
-        grid-template-rows: 56px 38px 108px 116px;
+        grid-template-rows: 56px 38px 108px 104px;
+        margin-bottom: 90px;
     }
 
     .aboutme__info-photo {
@@ -101,16 +116,24 @@
     }
 }
 
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 700px) {
+    .aboutme__container {
+        width: 100%;
+        height: 100%;
+    }
+
     .aboutme__title {
         font-size: 18px;
-        line-height: 78px;
-        margin: 0 auto 60px;
+        line-height: 76px;
+        margin: 4px auto 60px;
     }
 
     .aboutme__info {
-        grid-template-columns: 292px;
-        grid-template-rows: 392px 56px 36px 152px 87px;
+        width: 284px;
+        grid-template-columns: 284px;
+        grid-template-rows: 392px 56px 36px 152px 40px;
+        /* margin-bottom: 47px; */
+        margin: 0 auto 47px;
     }
 
     .aboutme__info-name {
@@ -136,7 +159,7 @@
     }
 
     .aboutme__info-photo {
-        width: 280px;
+        width: 284px;
         grid-column: 1;
         grid-row: 1;
     }

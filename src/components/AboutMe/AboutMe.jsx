@@ -12,7 +12,7 @@ export default function AboutMe() {
                     <p className="aboutme__info-age">Фронтенд-разработчик, 30 лет</p>
                     <p className="aboutme__info-biography">Я родился и живу в Саратове, закончил факультет экономики СГУ. У меня есть жена и дочь. Я люблю слушать музыку, а ещё увлекаюсь бегом. Недавно начал кодить. С 2015 года работал в компании «СКБ Контур». После того, как прошёл курс по веб-разработке, начал заниматься фриланс-заказами и ушёл с постоянной работы.</p>
                     <a href="https://github.com/Yonas3s" target="blank" className="aboutme__link-github">Github</a>
-                    <img src={mePhoto} alt="Мое фото" className="aboutme__info-photo" />
+                    <img src={mePhoto} alt="Фото создателя этого сайта" className="aboutme__info-photo" />
                 </div>
             </Blank>
         </section>

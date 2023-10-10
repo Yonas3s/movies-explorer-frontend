@@ -8,8 +8,15 @@
     text-align: center;
 }
 
-.navtab__links {
+.navtab__list {
+    list-style: none;
+    margin-right: 40px;
+}
+
+.navtab__lists {
     width: 280px;
+    display: flex;
+    flex-direction: row;
 }
 
 .navtab__link {
@@ -19,15 +26,19 @@
     font-weight: 500;
     text-decoration: underline;
     line-height: 16px;
-    margin-right: 40px;
 }
 
-.navtab__link:last-of-type {
+.navtab__list:last-of-type {
     margin-right: 0;
 }
 
 @media screen and (max-width: 320px) {
+    .navtab__lists {
+        width: 246px;
+    }
+    
     .navtab__link {
         font-size: 11px;
+        margin-right: 24px;
     }
 }

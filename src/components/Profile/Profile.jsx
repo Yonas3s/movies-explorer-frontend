@@ -1,11 +1,9 @@
-import Blank from "../Blank/Blank";
 import "./Profile.css";
 
 export default function Profile() {
     return (
         <section className="profile__container">
-            <Blank>
-                <h2 className="profile__title">Привет, Виталий!</h2>
+                <h1 className="profile__title">Привет, Виталий!</h1>
                 <form className="profile__form">
                     <div className="profile__form_section">
                         <p className="profile__form-description">Имя</p>
@@ -18,7 +16,6 @@ export default function Profile() {
                     <button type="submit" className="profile__form-submit">Редактировать</button>
                 </form>
                 <a className="profile__link" href="www.yandex.ru">Выйти из аккаунта</a>
-            </Blank>
         </section>
     )
 }
