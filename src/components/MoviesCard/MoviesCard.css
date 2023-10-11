@@ -1,4 +1,4 @@
-.movie__container {
+.movie {
     display: grid;
     grid-template-columns: 360px;
     grid-template-rows: 201px 30px;
@@ -41,7 +41,7 @@
     grid-row: 1;
 }
 
-.movie__container:hover .movie__save {
+.movie:hover .movie__save {
     display: block;
 }
 
@@ -76,7 +76,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .movie__container {
+    .movie {
         display: grid;
         grid-template-columns: 339px;
         grid-template-rows: 190px 30px;
@@ -102,7 +102,7 @@
 }
 
 @media screen and (max-width: 600px) {
-    .movie__container {
+    .movie {
         display: grid;
         grid-template-columns: 300px;
         grid-template-rows: 168px 30px;

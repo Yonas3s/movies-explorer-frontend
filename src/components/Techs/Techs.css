@@ -11,7 +11,7 @@
     letter-spacing: -1px;
 }
 
-.techs__container {
+.techs {
     background-color: #F5F5F5;
     display: block;
     margin: auto;
@@ -79,7 +79,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .techs__container {
+    .techs {
         max-width: 100%;
         padding-top: 70px;
         padding-bottom: 90px;
@@ -126,7 +126,7 @@
         margin-bottom: 50px;
     }
 
-    .techs__container {
+    .techs {
         background-color: white;
         padding: 0;
     }

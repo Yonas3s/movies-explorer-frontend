@@ -2,8 +2,8 @@ import "./NavTab.css"
 
 export default function NavTab() {
     return (
-        <section className="navtab__container">
-            <ul className="navtab__lists">
+        <nav className="navtab">
+            <ul className="navtab__container">
                 <li className="navtab__list">
                     <a href="#aboutproject" className="navtab__link">О проекте</a>
                 </li>
@@ -14,6 +14,6 @@ export default function NavTab() {
                     <a href="#aboutme" className="navtab__link">Студент</a>
                 </li>
             </ul>
-        </section>
+        </nav>
     )
 }

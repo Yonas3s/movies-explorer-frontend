@@ -4,7 +4,7 @@ import Blank from "../Blank/Blank";
 
 export default function Portfolio() {
     return (
-        <section className="portfolio__container">
+        <section className="portfolio">
             <Blank>
                 <h2 className="portfolio__title">Портфолио</h2>
                 <ul className="portfolio__lists">

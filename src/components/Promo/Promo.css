@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-.promo__container {
+.promo {
     width: 100%;
     background: no-repeat;
     background-image: url("../../images/logo-yandex-practicum.png");
@@ -28,7 +28,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .promo__container {
+    .promo {
         width: 100%;
         background-size: 319px;
         background-position: center 48%;
@@ -44,7 +44,7 @@
 }
 
 @media screen and (max-width: 546px) {
-    .promo__container {
+    .promo {
         background-size: 248px;
         background-position: center 44%;
     }

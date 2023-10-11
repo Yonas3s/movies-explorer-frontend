@@ -6,7 +6,7 @@ import Main from '../../Main/Main.jsx';
 
 function App() {
   return (
-    <div className='root__page'>
+    <div className='page'>
       <Routes>
         <Route path='signup' element={
           <Main name='signup' />

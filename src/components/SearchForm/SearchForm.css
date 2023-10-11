@@ -1,4 +1,4 @@
-.search__page {
+.search {
     width: calc(1140/1280*100%);
     display: flex;
     justify-content: center;
@@ -57,7 +57,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .search__page {
+    .search {
         width: 708px;
         padding-top: 80px;
     }
@@ -68,7 +68,7 @@
         margin-bottom: 46px;
     }
 
-    .search__page {
+    .search {
         width: calc(302/320*100%);
         padding-top: 68px;
     }

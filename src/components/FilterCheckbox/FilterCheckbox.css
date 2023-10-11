@@ -1,4 +1,4 @@
-.filter__container {
+.filter {
     border-left: 1px solid #CBCBCB;
     display: inline;
     width: 226px;
@@ -10,7 +10,7 @@
     padding: 0 29px 0 30px;
 }
 
-.shortfilms__text {
+.filter__text {
     color: black;
     font-size: 13px;
     font-family: Inter, sans-serif;
@@ -18,11 +18,11 @@
     line-height: 18px;
 }
 
-.shortfilms__checkbox {
+.filter__checkbox {
     display: none;
 }
 
-.shortfilms__checkbox+label {
+.filter__checkbox+label {
     display: flex;
     border-radius: 99px;
     width: 36px;
@@ -31,28 +31,28 @@
     background-image: url("../../images/filter-checkbox-custom.svg");
 }
 
-.shortfilms__checkbox-active+label {
+.filter__checkbox-active+label {
     background-image: url("../../images/filter-checkbox-custom-active.svg");
 }
 
 @media screen and (max-width: 1024px) {
-    .filter__container {
+    .filter {
         padding: 0 20px;
     }
 
-    .shortfilms__text {
+    .filter__text {
         font-size: 13px;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .filter__container {
+    .filter {
         border-left: none;
         margin: auto;
         height: 18px;
     }
 
-    .shortfilms__text {
+    .filter__text {
         font-size: 11px;
     }
 }

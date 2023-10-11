@@ -4,7 +4,7 @@ import Blank from "../Blank/Blank";
 
 export default function AboutMe() {
     return (
-        <section className="aboutme__container" id="aboutme">
+        <section className="aboutme" id="aboutme">
             <Blank>
                 <h2 className="aboutme__title">Студент</h2>
                 <div className="aboutme__info">

@@ -17,8 +17,7 @@ export default function SearchForm() {
     }, [width])
 
     return (
-        <section className="search__page">
-            {/* <Blank> */}
+        <nav className="search">
                 <form className="search__form">
                     {bigWidth ? (
                         <div className="search__container">
@@ -37,7 +36,6 @@ export default function SearchForm() {
                         </>
                     )}
                 </form>
-            {/* </Blank> */}
-        </section>
+        </nav>
     )
 }

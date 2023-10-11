@@ -1,4 +1,4 @@
-.navtab__container {
+.navtab{
     height: 66px;
     background-color: black;
     display: flex;
@@ -13,7 +13,7 @@
     margin-right: 40px;
 }
 
-.navtab__lists {
+.navtab__container {
     width: 280px;
     display: flex;
     flex-direction: row;
@@ -33,12 +33,16 @@
 }
 
 @media screen and (max-width: 320px) {
-    .navtab__lists {
-        width: 246px;
+    .navtab__container {
+        width: 214px;
     }
     
     .navtab__link {
         font-size: 11px;
+        /* margin-right: 24px; */
+    }
+
+    .navtab__list {
         margin-right: 24px;
     }
 }

@@ -1,4 +1,4 @@
-.portfolio__container {
+.portfolio {
     display: block;
     /* margin: auto; */
     width: 100%;
@@ -61,7 +61,7 @@
         letter-spacing: -1.1px;
     }
 
-    .portfolio__container {
+    .portfolio {
         margin-bottom: 152px;
     }
 
@@ -72,7 +72,7 @@
 }
 
 @media screen and (max-width: 425px) {
-    .portfolio__container {
+    .portfolio {
         margin-bottom: 128px;
     }
 
@@ -80,9 +80,12 @@
         margin-top: 40px;
     }
 
+    .portfolio__list {
+        margin-bottom: 20px;
+    }
+
     .portfolio__link {
         padding: 0 0 20px;
-        margin-bottom: 20px;
     }
 
     .portfolio__link:last-of-type {
