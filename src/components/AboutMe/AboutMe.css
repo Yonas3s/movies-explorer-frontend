@@ -1,0 +1,176 @@
+* {
+    padding: 0;
+}
+
+.aboutme__title {
+    border-bottom: 1px solid black;
+    font-size: 22px;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    line-height: 75px;
+    margin-top: 87px;
+    margin-bottom: 65px;
+    letter-spacing: -0.7px;
+}
+
+.aboutme {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+
+.aboutme__info {
+    display: grid;
+    grid-template-columns: 590px auto 270px;
+    grid-template-rows: 57px 38px 211px 20px; 
+    margin-bottom: 101px;
+}
+/* 114px */
+
+.aboutme__info-name {
+    grid-column: 1;
+    grid-row: 1;
+    color: black;
+    font-size: 50px;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    line-height: 58px;
+    letter-spacing: -2px;
+}
+
+.aboutme__info-age {
+    grid-column: 1;
+    grid-row: 2;
+    color: black;
+    font-size: 18px;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    line-height: 20px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.aboutme__info-biography {
+    grid-column: 1;
+    grid-row: 3;
+    color: black;
+    font-size: 14px;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    line-height: 22px;
+    display: flex;
+    /* align-items: flex-end; */
+    /* overflow-y: scroll; */
+    padding-top: 26px;
+}
+
+.aboutme__link-github {
+    grid-column: 1;
+    grid-row: 4;
+    color: black;
+    font-size: 14px;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+}
+
+.aboutme__info-photo {
+    grid-column: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+@media screen and (max-width: 1024px) {
+    .aboutme__title {
+        margin-top: 65px;
+        line-height: 77px;
+        margin-bottom: 65px;
+    }
+    
+    .aboutme__info-name {
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: -1.4px;
+    }
+
+    .aboutme__info-age {
+        font-size: 12px;
+        line-height: 16px;
+        align-items: flex-start;
+    }
+
+    .aboutme__info-biography {
+        font-size: 12px;
+        height: 108px;
+        line-height: 18px;
+        letter-spacing: 0.01px;
+    }
+
+    .aboutme__info {
+        grid-template-columns: 364px auto 255px;
+        grid-template-rows: 56px 38px 108px 104px;
+        margin-bottom: 90px;
+    }
+
+    .aboutme__info-photo {
+        width: 255px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .aboutme {
+        width: 100%;
+        height: 100%;
+    }
+
+    .aboutme__title {
+        font-size: 18px;
+        line-height: 76px;
+        margin: 4px auto 60px;
+    }
+
+    .aboutme__info {
+        width: 284px;
+        grid-template-columns: 284px;
+        grid-template-rows: 392px 56px 36px 152px 40px;
+        /* margin-bottom: 47px; */
+        margin: 0 auto 47px;
+    }
+
+    .aboutme__info-name {
+        font-size: 30px;
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .aboutme__info-age {
+        font-size: 11px;
+        line-height: 16px;
+        align-items: flex-start;
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .aboutme__info-biography {
+        font-size: 11px;
+        height: 112px;
+        line-height: 16px;
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    .aboutme__info-photo {
+        width: 284px;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .aboutme__link-github {
+        grid-column: 1;
+        grid-row: 5;
+        display: flex;
+        align-items: flex-start;
+    }
+}
