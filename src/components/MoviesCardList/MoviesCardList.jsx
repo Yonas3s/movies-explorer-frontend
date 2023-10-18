@@ -12,7 +12,7 @@ export default function MoviesCardList({
     addMovie,
     isLoading,
     serverError,
-    firstEntrance
+    firstEntrance,
 }) {
     const { width } = useWindowDimensions();
     const [displayedMovies, setDisplayedMovies] = useState(0);
@@ -44,32 +44,24 @@ export default function MoviesCardList({
     return (
         <section className="movieslist">
             <ul className="movieslist__container">
-                {/* { === false ? movies.slice(0, displayedMovies).map((data) => {
-                    return (<MoviesCard liked={liked} movies={data} onLike={onLike} onDelete={onDelete} savedMovies={savedMovies}
-                    />)
-                }) : movies.map((data) => {
-                    return (<MoviesCard liked={liked} movies={data} onLike={onLike} onDelete={onDelete} savedMovies={savedMovies}
-                    />)
-                })} */}
                 {isLoading ? <Preloader /> :
-                    (pathname === '/movies' && fact.length !== 0) ?
-                        movies.slice(0, displayedMovies).map(data => {
+                    (pathname === '/saved-movies' && movies.length !== 0) ?
+                        movies.map(data => {
                             return (
                                 <MoviesCard
-                                    key={data.id}
-                                    savedMovies={savedMovies}
-                                    addMovie={addMovie}
+                                    key={data._id}
+                                    onDelete={onDelete}
                                     data={data}
                                 />
                             )
                         })
-                        : movies.length !== 0 ?
-                            movies.map(data => {
+                        : fact.length !== 0 ?
+                            movies.slice(0, displayedMovies).map(data => {
                                 return (
                                     <MoviesCard
-                                        key={data._id}
-                                        onDelete={onDelete}
-                                        // savedMovies={savedMovies}
+                                        key={data.id}
+                                        savedMovies={savedMovies}
+                                        addMovie={addMovie}
                                         data={data}
                                     />
                                 )

@@ -6,12 +6,10 @@ import useWindowDimensions from "../../utils/useWindowDimensions/useWindowDimens
 import useFormValidation from "../../utils/useFormValidation";
 import { useLocation } from "react-router-dom";
 
-export default function SearchForm({ isCheck, changeShort, searchedMovie, searchMovies, setIsError, firstEntrance, savedMovies, }) {
-    // const { values, errors, isInputValid, isValid, handleChange, reset} = useFormValidation()
+export default function SearchForm({ isCheck, changeShort, searchedMovie, searchMovies, firstEntrance, savedMovies}) {
     const [bigWidth, setBigWidth] = useState(); 
     const { width } = useWindowDimensions();
         const { pathname } = useLocation()
-    // const isError = useContext(ErrorContext)
     const { values, handleChange, reset } = useFormValidation()
 
     useEffect(() => {
@@ -28,18 +26,13 @@ export default function SearchForm({ isCheck, changeShort, searchedMovie, search
         } else {
             reset({ search: searchedMovie })
         }
-        setIsError(false)
-    }, [searchedMovie, reset, setIsError, pathname, savedMovies])
+    }, [searchedMovie, reset, pathname, savedMovies])
 
-    // searchedMovie, reset, setIsError, pathname, savedMovies
 
     function onSubmit(evt) {
         evt.preventDefault()
         if (evt.target.search.value) {
             searchMovies(evt.target.search.value)
-            setIsError(false)
-        } else {
-            setIsError(true)
         }
     }
 
@@ -52,7 +45,6 @@ export default function SearchForm({ isCheck, changeShort, searchedMovie, search
                         <input type="text" name='search' className="search__form-input" placeholder="Фильм" value={values.search || ''}
                             onChange={(evt) => {
                                 handleChange(evt)
-                                setIsError(false)
                             }} 
                             disabled={savedMovies ? (savedMovies.length === 0 && true) : false}
                             required
@@ -66,7 +58,6 @@ export default function SearchForm({ isCheck, changeShort, searchedMovie, search
                             <input type="text" name='search' className="search__form-input" placeholder="Фильм" value={values.search || ''}
                                 onChange={(evt) => {
                                     handleChange(evt)
-                                    setIsError(false)
                                 }} 
                                 disabled={savedMovies ? (savedMovies.length === 0 && true) : false}
                                 required

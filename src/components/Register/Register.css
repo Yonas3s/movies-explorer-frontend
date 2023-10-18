@@ -18,12 +18,7 @@
     font-family: Inter, sans-serif;
     font-weight: 500;
     padding-left: 15px;
-    /* margin-bottom: 15px; */
 }
-
-/* .register__form-input:last-of-type {
-    margin-bottom: 91px;
-} */
 
 .register__title {
     color: black;
@@ -149,7 +144,7 @@ span {
     }
 
     .form__input-error {
-        top: 0; 
+        top: 0;
         /* left: 50px; */
         position: relative;
         text-align: start;

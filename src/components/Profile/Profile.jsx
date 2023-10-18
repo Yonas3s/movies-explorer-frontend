@@ -6,13 +6,13 @@ import CurrentUserContext from "../../contexts/CurrentUserContext";
 export default function Profile({ onUpdateInfo, signOut }) {
     const currentUser = useContext(CurrentUserContext);
     const [isLastValueInput, setIsLastValueInput] = useState(false);
-    const { values, errors, isInputValid, isValid, handleChange, reset } = useFormValidation();
+    const { values, handleChange, reset } = useFormValidation();
 
     useEffect(() => {
         if (currentUser) {
             reset(currentUser);
         }
-    }, [currentUser]);
+    }, [currentUser, reset]);
 
     function handleSubmit(e) {
         e.preventDefault();
@@ -26,7 +26,7 @@ export default function Profile({ onUpdateInfo, signOut }) {
             setIsLastValueInput(false);
         }
 
-    }, [values]);
+    }, [values, currentUser.name, currentUser.email]);
 
     return (
         <section className="profile">

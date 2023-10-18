@@ -2,18 +2,18 @@ import "./Register.css";
 import logo from "../../images/logo.svg";
 import { Link } from "react-router-dom";
 import useFormValidation from "../../utils/useFormValidation";
-import { useState } from "react";
 
 export default function Register({ onRegister }) {
-    const { values, errors, isInputValid, isValid, handleChange, } = useFormValidation()
+    const { values, errors, handleChange, } = useFormValidation({
+        initialValues: {
+            email: '',
+            password: ''
+        }
+    })
 
     function handleSubmit(e) {
         e.preventDefault();
-        onRegister({
-            name: values.username,
-            email: values.email,
-            password: values.password,
-        });
+        onRegister(values.username, values.email, values.password);
     }
 
     return (

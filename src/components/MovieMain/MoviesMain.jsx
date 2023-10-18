@@ -12,6 +12,7 @@ export default function MoviesMain({ setIsError, addMovie, savedMovies }) {
   const [isLoading, setIsLoading] = useState(false)
   const [serverError, setServerError] = useState(false)
   const [firstEntrance, setFirstEntrance] = useState(true)
+  const [seatched, setSearched] = useState(false)
 
   const filter = useCallback((search, isCheck, movies) => {
     setSearchedMovie(search)
@@ -34,7 +35,7 @@ export default function MoviesMain({ setIsError, addMovie, savedMovies }) {
           setServerError(false)
           setFirstEntrance(false)
           filter(search, isCheck, res)
-          console.log(allMovies)
+          setSearched(true)
         })
         .catch(err => {
           setServerError(true)
@@ -43,6 +44,7 @@ export default function MoviesMain({ setIsError, addMovie, savedMovies }) {
         .finally(() => setIsLoading(false))
     } else {
       filter(search, isCheck, allMovies)
+      setSearched(false)
     }
   }
 
@@ -81,6 +83,8 @@ export default function MoviesMain({ setIsError, addMovie, savedMovies }) {
         changeShort={changeShort}
         setIsError={setIsError}
         firstEntrance={firstEntrance}
+        setSearched={setSearched}
+        searched={seatched}
       />
       <MoviesCardList
         movies={filteredMovies}
@@ -89,6 +93,8 @@ export default function MoviesMain({ setIsError, addMovie, savedMovies }) {
         isLoading={isLoading}
         serverError={serverError}
         firstEntrance={firstEntrance}
+        allMovies={allMovies}
+        searched={seatched}
       />
     </>
   )

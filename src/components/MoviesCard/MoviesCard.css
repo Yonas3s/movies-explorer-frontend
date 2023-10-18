@@ -86,14 +86,14 @@
         height: 190px;
     } */
 
+    .movie__save {
+        line-height: 10px;
+        margin-left: 250px;
+    }
+
     .movie__save-liked {
         margin-top: 14px;
         margin-left: 304px;
-    }
-
-    .movie__save {
-        line-height: 10px;
-        margin-left: 218px;
     }
 
     .movie__description {
@@ -115,14 +115,15 @@
         height: 100%;
     }
 
-    .movie__save-liked {
-        margin-top: 10px;
-        margin-left: 269px;
-    }
-
     .movie__save {
         line-height: 10px;
         margin-left: 218px;
+        display: block;
+    }
+
+    .movie__save-liked {
+        margin-top: 10px;
+        margin-left: 269px;
     }
 
     .movie__description {
