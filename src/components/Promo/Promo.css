@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.promo {
+    width: 100%;
+    background: no-repeat;
+    background-image: url("../../images/logo-yandex-practicum.png");
+    background-size: 320px 320px;
+    background-color: #F3C1F8;
+    background-position: center 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.promo__text {
+    font-size: 49px;
+    letter-spacing: -1px;
+    word-spacing: -3px;
+    font-family: Inter, sans-serif;
+    font-weight: 300;
+    line-height: 58px;
+    width: 730px;
+    text-align: center;
+    margin: 184px auto 224px;
+}
+
+@media screen and (max-width: 1024px) {
+    .promo {
+        width: 100%;
+        background-size: 319px;
+        background-position: center 48%;
+    }
+
+    .promo__text {
+        font-size: 50px;
+        line-height: 58px;
+        width: 100%;
+        letter-spacing: -1.7px;
+        margin: 326px auto 342px;
+    }
+}
+
+@media screen and (max-width: 546px) {
+    .promo {
+        background-size: 248px;
+        background-position: center 44%;
+    }
+
+    .promo__text {
+        width: 289px;
+        font-size: 31px;
+        line-height: 39px;
+        margin-top: 207px;
+        margin-bottom: 245px;
+        letter-spacing: -1.3px;
+    }
+}
