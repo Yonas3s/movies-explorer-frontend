@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.53d823e9.css",
-    "main.js": "/static/js/main.e46df274.js",
+    "main.css": "/static/css/main.355267bf.css",
+    "main.js": "/static/js/main.f0b2f02d.js",
     "static/js/787.5fef94a4.chunk.js": "/static/js/787.5fef94a4.chunk.js",
     "static/media/Inter-Medium.woff": "/static/media/Inter-Medium.eec0ea57721daa33c7a2.woff",
     "static/media/Inter-Black.woff?v=3.19": "/static/media/Inter-Black.c6938660eec019fefd68.woff",
@@ -14,6 +14,7 @@
     "static/media/search-icon.svg": "/static/media/search-icon.2ab03c9e2adf27b9891f96232df3d887.svg",
     "static/media/icon-account-white.svg": "/static/media/icon-account-white.57945d25196ffdd468422cd344989fdc.svg",
     "static/media/icon-account.svg": "/static/media/icon-account.bc1e59a5ac5b98c73ea9a0d401b3d920.svg",
+    "static/media/icon-delete-movie.svg": "/static/media/icon-delete-movie.c21e68e02377c11a80bb.svg",
     "static/media/logo.svg": "/static/media/logo.a7b45961954104d0586ad2bc985b31cc.svg",
     "static/media/icon-burgermenu.svg": "/static/media/icon-burgermenu.08035af1e508cd8cfed5.svg",
     "static/media/icon-close.svg": "/static/media/icon-close.8f7319ed31ca2b9aebb2.svg",
@@ -21,12 +22,12 @@
     "static/media/icon-save-movie.svg": "/static/media/icon-save-movie.302833fa49f2274557fc.svg",
     "static/media/filter-checkbox-custom.svg": "/static/media/filter-checkbox-custom.8cf2f1354435f31900ca.svg",
     "static/media/filter-checkbox-custom-active.svg": "/static/media/filter-checkbox-custom-active.b5e7a53b7bcdbff7f6c9.svg",
-    "main.53d823e9.css.map": "/static/css/main.53d823e9.css.map",
-    "main.e46df274.js.map": "/static/js/main.e46df274.js.map",
+    "main.355267bf.css.map": "/static/css/main.355267bf.css.map",
+    "main.f0b2f02d.js.map": "/static/js/main.f0b2f02d.js.map",
     "787.5fef94a4.chunk.js.map": "/static/js/787.5fef94a4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.53d823e9.css",
-    "static/js/main.e46df274.js"
+    "static/css/main.355267bf.css",
+    "static/js/main.f0b2f02d.js"
   ]
 }

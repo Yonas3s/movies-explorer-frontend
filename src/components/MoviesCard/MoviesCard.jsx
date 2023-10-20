@@ -24,7 +24,7 @@ export default function MoviesCard({ addMovie, onDelete, data, savedMovies }) {
     
     return (
         <li className="movie">
-            {pathname === '/movies' ? <button type='button' className={`movie__save ${click ? 'movie__save-liked' : ''}`} onClick={onClick} value={'Сохранить'}>{click ? '' : 'Сохранить'}</button> : <button type='button' className="movie__save-liked" onClick={() => onDelete(data._id)} />}
+            {pathname === '/movies' ? <button type='button' className={`movie__save ${click ? 'movie__save-liked' : ''}`} onClick={onClick} value={'Сохранить'}>{click ? '' : 'Сохранить'}</button> : <button type='button' className="movie__save-delete" onClick={() => onDelete(data._id)} />}
             <a href={data.trailerLink} target='blank'><img src={pathname === '/movies' ? `https://api.nomoreparties.co${data.image.url}` : data.image} className="movie__photo" alt={data.name} /></a>
             <div className="movie__description">
                 <h2 className="movie__title">{data.nameRU}</h2> 

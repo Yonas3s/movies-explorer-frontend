@@ -32,6 +32,20 @@
     position: absolute;
     margin-top: 14px;
     margin-left: 325px;
+    display: block;
+}
+
+.movie__save-delete {
+    background-image: url("../../images/icon-delete-movie.svg");
+    background-color: transparent;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    margin-top: 14px;
+    margin-left: 325px;
+    display: none;
 }
 
 .movie__photo {
@@ -42,6 +56,10 @@
 }
 
 .movie:hover .movie__save {
+    display: block;
+}
+
+.movie:hover .movie__save-delete {
     display: block;
 }
 
@@ -96,6 +114,11 @@
         margin-left: 304px;
     }
 
+    .movie__save-delete {
+        margin-top: 14px;
+        margin-left: 304px;
+    }
+
     .movie__description {
         padding: 25px 0;
     }
@@ -119,6 +142,12 @@
         line-height: 10px;
         margin-left: 218px;
         display: block;
+    }
+
+    .movie__save-delete {
+        display: block;
+        margin-top: 10px;
+        margin-left: 269px;
     }
 
     .movie__save-liked {

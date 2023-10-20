@@ -21,11 +21,12 @@ export default function MoviesMain({ setIsError, addMovie, savedMovies }) {
     localStorage.setItem('allmovies', JSON.stringify(movies))
     setFilteredMovies(movies.filter((movie) => {
       const searchName = movie.nameRU.toLowerCase().includes(search.toLowerCase())
-      return isCheck ? (searchName && movie.duration <= 50) : searchName
+      return isCheck ? (searchName && movie.duration <= 40) : searchName
     }))
   }, [])
 
   function searchMovies(search) {
+    console.log(search)
     if (allMovies.length === 0) {
       setIsLoading(true)
       apiMovies.getMovies()
@@ -39,7 +40,7 @@ export default function MoviesMain({ setIsError, addMovie, savedMovies }) {
         })
         .catch(err => {
           setServerError(true)
-          console.error(`Ошибка при поске фильмов ${err}`)
+          console.error(`Ошибка при поиске фильмов ${err}`)
         })
         .finally(() => setIsLoading(false))
     } else {
@@ -85,6 +86,7 @@ export default function MoviesMain({ setIsError, addMovie, savedMovies }) {
         firstEntrance={firstEntrance}
         setSearched={setSearched}
         searched={seatched}
+        setFirstEntrance={setFirstEntrance}
       />
       <MoviesCardList
         movies={filteredMovies}

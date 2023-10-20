@@ -14,7 +14,7 @@ export default function SavedMovies({ savedMovies, onDelete, setIsError }) {
     console.log(filteredMovies)
     setFilteredMovies(movies.filter((movie) => {
       const searchName = movie.nameRU.toLowerCase().includes(search.toLowerCase())
-      return isCheck ? (searchName && movie.duration <= 50) : searchName
+      return isCheck ? (searchName && movie.duration <= 40) : searchName
     }))
   }, [])
 

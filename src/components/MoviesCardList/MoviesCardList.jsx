@@ -74,13 +74,13 @@ export default function MoviesCardList({
                                 : !firstEntrance ?
                                     <span className='gallery__serch-error'>«Ничего не найдено»</span>
                                     : pathname === '/movies' ?
-                                        <span className='gallery__serch-error'>«Чтобы увидеть список фильмоа выполните поиск»</span>
+                                        <span className='gallery__serch-error'>«Чтобы увидеть список фильмов выполните поиск»</span>
                                         :
                                         <span className='gallery__serch-error'>«Нет сохранённых фильмов»</span>
 
                 }
             </ul>
-            {movies.length > displayedMovies ? (
+            {movies.length > displayedMovies && pathname === '/movies' ? (
                 <button type="button" className='movieslist__button' onClick={showMore}>Еще</button>
             ) : ('')}
         </section>

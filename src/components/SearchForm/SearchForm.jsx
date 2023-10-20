@@ -6,8 +6,9 @@ import useWindowDimensions from "../../utils/useWindowDimensions/useWindowDimens
 import useFormValidation from "../../utils/useFormValidation";
 import { useLocation } from "react-router-dom";
 
-export default function SearchForm({ isCheck, changeShort, searchedMovie, searchMovies, firstEntrance, savedMovies}) {
+export default function SearchForm({ isCheck, changeShort, searchedMovie, searchMovies, firstEntrance, savedMovies }) {
     const [bigWidth, setBigWidth] = useState(); 
+    const [isError, setIsError] = useState(false);
     const { width } = useWindowDimensions();
         const { pathname } = useLocation()
     const { values, handleChange, reset } = useFormValidation()
@@ -33,12 +34,15 @@ export default function SearchForm({ isCheck, changeShort, searchedMovie, search
         evt.preventDefault()
         if (evt.target.search.value) {
             searchMovies(evt.target.search.value)
+            setIsError(false);
+        } else {
+            setIsError(true);
         }
     }
 
     return (
         <nav className="search">
-            <form className="search__form" name={'SearchForm'} onSubmit={onSubmit}>
+            <form className="search__form" name={'SearchForm'} onSubmit={onSubmit} noValidate>
                 {bigWidth ? (
                     <div className="search__container">
                         <img src={searchIcon} alt="Иконка поиска" className="search__icon" />
@@ -60,7 +64,6 @@ export default function SearchForm({ isCheck, changeShort, searchedMovie, search
                                     handleChange(evt)
                                 }} 
                                 disabled={savedMovies ? (savedMovies.length === 0 && true) : false}
-                                required
                                 />
                             <button type="submit" className="search__form-submit">Найти</button>
                         </div>
@@ -68,6 +71,7 @@ export default function SearchForm({ isCheck, changeShort, searchedMovie, search
                     </>
                 )}
             </form>
+            {isError && <span className="search__input-error">Нужно ввести ключевое слово</span>}
         </nav>
     )
 }

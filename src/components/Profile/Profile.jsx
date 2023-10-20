@@ -40,7 +40,7 @@ export default function Profile({ onUpdateInfo, signOut }) {
                     <p className="profile__form-description">E-mail</p>
                     <input onChange={handleChange} type="text" name="email" defaultValue={values.email || ''} className="profile__form-input" />
                 </div>
-                <button type="submit" className="profile__form-submit">Редактировать</button>
+                <button type="submit" className={`profile__form-submit ${isLastValueInput ? 'profile__form-disabled' : ''}`} disabled={isLastValueInput ? true : false}>Редактировать</button>
             </form>
             <button type='button' className="profile__link" onClick={signOut}>Выйти из аккаунта</button>
         </section>
